@@ -1,11 +1,10 @@
 package com.example.springbootdemo;
 
+import com.example.springbootdemo.components.HelloComponent;
+import com.example.springbootdemo.models.ResultRecord;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.springbootdemo.components.HelloComponent;
-import com.example.springbootdemo.models.ResultRecord;
 
 @RestController
 public class HelloController {
