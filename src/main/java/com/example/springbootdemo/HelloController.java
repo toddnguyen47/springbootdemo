@@ -11,7 +11,7 @@ public class HelloController {
 
     private final HelloComponent helloComponent;
 
-    public HelloController(HelloComponent helloComponent) {
+    public HelloController(final HelloComponent helloComponent) {
         this.helloComponent = helloComponent;
     }
 
@@ -21,7 +21,7 @@ public class HelloController {
     }
 
     @GetMapping("/calc")
-    public ResultRecord calc(@RequestParam int input) {
+    public ResultRecord calc(@RequestParam final int input) {
         var result = helloComponent.addConfiguredValue(input);
         var resultRecord = new ResultRecord(result);
         return resultRecord;

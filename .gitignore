@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Ignore formatting files ###
+src/main/java/com/example/springbootdemo/formatme

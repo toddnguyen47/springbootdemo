@@ -8,7 +8,7 @@ public class HelloComponentImpl implements HelloComponent {
 
     private final int configuredValue;
 
-    public HelloComponentImpl(@Value("${configured.value}") int configuredValue) {
+    public HelloComponentImpl(@Value("${configured.value}") final int configuredValue) {
         this.configuredValue = configuredValue;
     }
 
