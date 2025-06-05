@@ -57,15 +57,8 @@ spotless {
         // fix formatting of type annotations
         formatAnnotations()
 
-        // don't need to set target, it is inferred from java
-
-        // #region PALANTIR
-        // optional: you can also format Javadocs, requires at least Palantir 2.39.0
-        palantirJavaFormat().formatJavadoc(false)
-        // #endregion PALANTIR
-
         // #region GOOGLE_JAVA_FORMAT
-        // googleJavaFormat().aosp().reflowLongStrings().formatJavadoc(false).reorderImports(true).groupArtifact('com.google.googlejavaformat:google-java-format')
+        googleJavaFormat().reflowLongStrings().formatJavadoc(false).reorderImports(true).groupArtifact('com.google.googlejavaformat:google-java-format')
         // #endregion GOOGLE_JAVA_FORMAT
     }
 }
